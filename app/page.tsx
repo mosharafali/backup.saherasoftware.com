@@ -1,4 +1,5 @@
-export const dynamic = "force-dynamic";
+export const revalidate = 0;
+//export const dynamic = "force-dynamic";
 
 import getProducts, { IProductParams } from "../actions/getProducts";
 import HomeBanner from "./components/HomeBanner";
