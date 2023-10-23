@@ -1,6 +1,4 @@
 export const dynamic = "force-dynamic";
-
-import ContactForm from "@/app/contact/ContactForm";
 import Link from "next/link";
 import HomeBanner from "../components/HomeBanner";
 

@@ -13,6 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "noImplicitAny": true,
     "incremental": true,
     "plugins": [
       {
@@ -23,6 +24,18 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/contact/page.js",
+    "app/contact/layout.tsx",
+    "app/components/AppContainer.js",
+    "app/config/theme.js",
+    "app/config/nodemailer.js",
+    "libs/api.js",
+    "app/contact/_app.js"
+  ],
   "exclude": ["node_modules"]
 }
