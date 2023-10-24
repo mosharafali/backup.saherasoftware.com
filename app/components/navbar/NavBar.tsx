@@ -40,12 +40,12 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
           "
           >
             <Link href="/" className="flex items-center">
-              <div className="relative h-8 w-8 mr-35">
+              <div className="relative h-8 w-8 ">
                 <Image fill alt="Logo" src="/logo.png" />
               </div>
-              <h1 className=" hidden md:block text-2xl">Sahera software</h1>
+              <h1 className=" text-2xl">Sahera software</h1>
             </Link>
-            <div>
+            <div className="hidden md:block">
               <SearchBar />
             </div>
             <Link href={"/downloadapp"}>
@@ -62,9 +62,8 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
             </div>
           </div>
         </Container>
-        <div></div>
       </div>
-      <div className="hidden md:block">
+      <div>
         <Categories />
       </div>
     </div>
