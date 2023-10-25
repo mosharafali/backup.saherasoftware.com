@@ -48,7 +48,7 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
             <div className="hidden md:block">
               <SearchBar />
             </div>
-            <div className="  ">
+            <div className="hidden md:block">
               <CartCount />
             </div>
 
