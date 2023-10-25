@@ -1,7 +1,7 @@
 "use client";
 
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { AiOutlineGoogle } from "react-icons/ai";
+import { AiOutlineGoogle, AiOutlineFacebook } from "react-icons/ai";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -84,6 +84,12 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
         icon={AiOutlineGoogle}
         onClick={() => signIn("google")}
       />
+      <Button
+        outline
+        label="Sign up with Facebook"
+        icon={AiOutlineFacebook}
+        onClick={() => signIn("facebook")}
+      />
       <hr className="bg-slate-300 w-full h-px" />
       <Input
         id="name"
@@ -114,6 +120,7 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
         label={isLoading ? "Loading..." : "Sing Up"}
         onClick={handleSubmit(onSubmit)}
       />
+
       <p className="text-sm">
         Already have an account?{" "}
         <Link className="underline" href="/login">

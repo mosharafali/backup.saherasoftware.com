@@ -54,6 +54,7 @@ const HeaderMobile = () => {
         className="absolute inset-0 right-0 w-full bg-white"
         variants={sidebar}
       />
+
       <motion.ul
         variants={variants}
         className="absolute grid w-full gap-3 px-10 py-16"
@@ -74,6 +75,7 @@ const HeaderMobile = () => {
                       item.path === pathname ? "font-bold" : ""
                     }`}
                   >
+                    {item.icon}
                     {item.title}
                   </Link>
                 </MenuItem>

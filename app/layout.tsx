@@ -8,8 +8,6 @@ import Footer from "./components/Footer";
 import { CrispProvider } from "./components/crisp-provider";
 import "react-toastify/dist/ReactToastify.css";
 
-import HeaderMobile from "./components/header-mobile";
-
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
@@ -40,11 +38,7 @@ export default async function RootLayout({
           <CartProvider>
             <div className="flex flex-col min-h-screen">
               <NavBar currentUser={currentUser} />
-              <main className="flex-grow">
-                {children}
-
-                <HeaderMobile />
-              </main>
+              <main className="flex-grow">{children}</main>
 
               <Footer />
             </div>

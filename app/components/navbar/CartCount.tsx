@@ -16,8 +16,9 @@ const CartCount = () => {
       <div className="text-3xl">
         <CiShoppingCart />
       </div>
-      <span
-        className="
+      {cartTotalQty > 0 && (
+        <span
+          className="
       absolute
       top-[-10px]
       right-[-10px]
@@ -31,9 +32,10 @@ const CartCount = () => {
       justify-center
       text-sm
       "
-      >
-        {cartTotalQty}
-      </span>
+        >
+          {cartTotalQty}
+        </span>
+      )}
     </div>
   );
 };
