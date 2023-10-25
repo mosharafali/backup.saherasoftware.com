@@ -43,7 +43,7 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
               <div className="relative h-8 w-8 mr-4 ">
                 <Image fill alt="Logo" src="/logo.png" />
               </div>
-              <h1 className=" text-2xl">Sahera software</h1>
+              <h1 className=" text-xl">Sahera software</h1>
             </Link>
             <div className="hidden md:block">
               <SearchBar />

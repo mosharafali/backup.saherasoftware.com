@@ -27,13 +27,13 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={toggleOpen}
           className="
         p-2
-        border-[1px]
+        
         border-slate-400
         flex
         flex-row
         items-center
         gap-1
-        rounded-full
+        
         cursor-pointer
         hover:shadow-md
         transition
