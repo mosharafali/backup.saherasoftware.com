@@ -35,8 +35,8 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
           flex-row
           items-center
           justify-between
-          gap-1
-          md:gap-0
+          
+          
           "
           >
             <Link href="/" className="flex items-center">
@@ -48,8 +48,11 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
             <div className="hidden md:block">
               <SearchBar />
             </div>
-            <div className="flex items-center gap-8 md:gap-12">
+            <div className="  ">
               <CartCount />
+            </div>
+
+            <div className=" ">
               <UserMenu currentUser={currentUser} />
             </div>
             <div>
