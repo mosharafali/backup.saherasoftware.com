@@ -24,8 +24,8 @@ export default function DownloadappPage() {
                 className="icon"
                 style={{
                   position: "relative",
-                  top: "5px",
-                  left: "350px",
+                  top: "-5px",
+                  left: "150px",
                 }}
                 size="50px"
                 color="orange"
@@ -41,8 +41,8 @@ export default function DownloadappPage() {
                 className="icon"
                 style={{
                   position: "relative",
-                  top: "5px",
-                  left: "350px",
+                  top: "-5px",
+                  left: "150px",
                 }}
                 size="50px"
                 color="orange"
