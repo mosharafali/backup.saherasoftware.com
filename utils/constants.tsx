@@ -52,6 +52,14 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     title: "App",
     path: "/?category=App",
   },
+  {
+    title: "Login",
+    path: "/login",
+  },
+  {
+    title: "Register",
+    path: "/register",
+  },
 
   /*{
     title: "Settings",

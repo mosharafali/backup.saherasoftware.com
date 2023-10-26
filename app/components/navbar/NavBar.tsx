@@ -1,13 +1,14 @@
 import { Redressed } from "next/font/google";
 import Link from "next/link";
-import Image from "next/image";
+
 import Container from "../Container";
 import CartCount from "./CartCount";
 import UserMenu from "./UserMenu";
 import { SafeUser } from "@/types";
 import Categories from "./Categories";
 import SearchBar from "./SearchBar";
-import HeaderMobile from "@/app/components/header-mobile";
+import HeaderMobile from "../header-mobile";
+import Image from "next/image";
 
 interface NavBarProps {
   currentUser: SafeUser | null;
@@ -35,8 +36,8 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
           flex-row
           items-center
           justify-between
-          
-          
+          gap-3
+          md:gap-0
           "
           >
             <Link href="/" className="flex items-center">
@@ -49,19 +50,16 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
               <SearchBar />
             </div>
             <div className="hidden md:block">
-              <CartCount />
-            </div>
-
-            <div className=" ">
-              <UserMenu currentUser={currentUser} />
-            </div>
-            <div>
-              <HeaderMobile />
+              <nav className=" flex flex-wrap items-center  justify-center">
+                <CartCount />
+                <UserMenu currentUser={currentUser} />
+              </nav>
             </div>
           </div>
         </Container>
       </div>
       <Categories />
+      <HeaderMobile />
     </div>
   );
 };
