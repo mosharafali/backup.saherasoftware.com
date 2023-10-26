@@ -1,6 +1,6 @@
 "use client";
 
-import { AiOutlineGoogle } from "react-icons/ai";
+import { AiOutlineGoogle, AiOutlineFacebook } from "react-icons/ai";
 import Button from "../components/Button";
 import Heading from "../components/Heading";
 import Input from "../components/inputs/Input";
@@ -65,7 +65,7 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
 
   return (
     <>
-      <Heading title="Sign in to E~Shop" />
+      <Heading title="Sign in to Sahera software" />
       <Button
         outline
         label="Continue with Google"
@@ -73,6 +73,12 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
         onClick={() => {
           signIn("google");
         }}
+      />
+      <Button
+        outline
+        label="Sign up with Facebook"
+        icon={AiOutlineFacebook}
+        onClick={() => signIn("facebook")}
       />
       <hr className="bg-slate-300 w-full h-px" />
       <Input
