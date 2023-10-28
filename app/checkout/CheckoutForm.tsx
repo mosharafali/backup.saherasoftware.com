@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { useState, useEffect } from "react";
@@ -8,8 +9,8 @@ import {
   AddressElement,
 } from "@stripe/react-stripe-js";
 import { useCart } from "@/hooks/useCart";
-import Button from "../components/Button";
-import Heading from "../components/Heading";
+import Button from "@/components/Button";
+import Heading from "@/components/Heading";
 import { toast } from "react-hot-toast";
 import { formatPrice } from "@/utils/formatPrice";
 

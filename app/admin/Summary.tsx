@@ -1,7 +1,7 @@
 "use client";
 
 import { formatNumber } from "@/utils/formatNumber";
-import Heading from "../components/Heading";
+import Heading from "@/components/Heading";
 import { formatPrice } from "@/utils/formatPrice";
 import { Order, Product, User } from "@prisma/client";
 import { useEffect, useState } from "react";

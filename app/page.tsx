@@ -2,9 +2,9 @@ export const revalidate = 0;
 //export const dynamic = "force-dynamic";
 
 import getProducts, { IProductParams } from "../actions/getProducts";
-import HomeBanner from "./components/HomeBanner";
-import NullData from "./components/NullData";
-import ProductCard from "./components/products/ProductCard";
+import HomeBanner from "@/components/HomeBanner";
+import NullData from "@/components/NullData";
+import ProductCard from "@/components/products/ProductCard";
 
 interface HomeProps {
   searchParams: IProductParams;

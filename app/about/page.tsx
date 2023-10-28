@@ -1,5 +1,5 @@
 export const dynamic = "force-dynamic";
-import HomeBanner from "../components/HomeBanner";
+import HomeBanner from "@/components/HomeBanner";
 
 export default function AboutPage() {
   return (

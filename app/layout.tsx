@@ -1,11 +1,11 @@
 import CartProvider from "@/providers/CartProvider";
 import getCurrentUser from "../actions/getCurrentUser";
-import NavBar from "./components/navbar/NavBar";
+import NavBar from "@/components/navbar/NavBar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import Footer from "./components/Footer";
-import { CrispProvider } from "./components/crisp-provider";
+import Footer from "@/components/Footer";
+import { CrispProvider } from "@/components/crisp-provider";
 import "react-toastify/dist/ReactToastify.css";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });

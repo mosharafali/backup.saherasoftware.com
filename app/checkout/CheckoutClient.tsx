@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { loadStripe, StripeElementsOptions } from "@stripe/stripe-js";
@@ -7,7 +8,7 @@ import { useRouter } from "next/navigation";
 import CheckoutForm from "./CheckoutForm";
 import { useCart } from "@/hooks/useCart";
 import { toast } from "react-hot-toast";
-import Button from "../components/Button";
+import Button from "@/components/Button";
 
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string

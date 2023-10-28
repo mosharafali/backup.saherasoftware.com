@@ -1,7 +1,7 @@
 "use client";
 
-import Heading from "@/app/components/Heading";
-import Avatar from "@/app/components/navbar/Avatar";
+import Heading from "@/components/Heading";
+import Avatar from "@/components/navbar/Avatar";
 import { Rating } from "@mui/material";
 import { Product, Review } from "@prisma/client";
 import moment from "moment";

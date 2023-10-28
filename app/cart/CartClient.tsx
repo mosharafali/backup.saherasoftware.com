@@ -2,7 +2,7 @@
 
 import { useCart } from "@/hooks/useCart";
 import ItemContent from "./ItemContent";
-import Button from "../components/Button";
+import Button from "@/components/Button";
 import Link from "next/link";
 import { MdArrowBack } from "react-icons/md";
 import { SafeUser } from "@/types";

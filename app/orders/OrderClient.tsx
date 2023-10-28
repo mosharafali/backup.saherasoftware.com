@@ -1,8 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
-import ActionBtn from "@/app/components/ActionBtn";
-import Heading from "@/app/components/Heading";
-import Status from "@/app/components/Status";
+import ActionBtn from "@/components/ActionBtn";
+import Heading from "@/components/Heading";
+import Status from "@/components/Status";
 import { formatPrice } from "@/utils/formatPrice";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { Order, User } from "@prisma/client";
@@ -15,7 +16,7 @@ import {
   MdDone,
   MdRemoveRedEye,
 } from "react-icons/md";
-import NullData from "../components/NullData";
+import NullData from "@/components/NullData";
 
 interface OrdersClientProps {
   orders: ExtendedOrder[];

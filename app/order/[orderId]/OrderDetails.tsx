@@ -1,10 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { Order } from "@prisma/client";
 import OrderItem from "./OrderItem";
-import Heading from "@/app/components/Heading";
+import Heading from "@/components/Heading";
 import { formatPrice } from "@/utils/formatPrice";
-import Status from "@/app/components/Status";
+import Status from "@/components/Status";
 import { MdAccessTimeFilled, MdDeliveryDining, MdDone } from "react-icons/md";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";

@@ -6,12 +6,12 @@ import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
-import Input from "@/app/components/inputs/Input";
-import Button from "@/app/components/Button";
+import Input from "@/components/inputs/Input";
+import Button from "@/components/Button";
 import { categories } from "@/utils/Categories";
-import CategoryInput from "@/app/components/inputs/CategoryInput";
-import TextArea from "@/app/components/inputs/TextArea";
-import SelectColor from "@/app/components/inputs/SelectColor";
+import CategoryInput from "@/components/inputs/CategoryInput";
+import TextArea from "@/components/inputs/TextArea";
+import SelectColor from "@/components/inputs/SelectColor";
 import { colors } from "@/utils/Colors";
 import {
   getStorage,
@@ -20,8 +20,8 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import firebaseApp from "@/libs/firebase";
-import Heading from "@/app/components/Heading";
-import CustomCheckBox from "@/app/components/inputs/CustomCheckBox";
+import Heading from "@/components/Heading";
+import CustomCheckBox from "@/components/inputs/CustomCheckBox";
 
 export type ImageType = {
   color: string;

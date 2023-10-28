@@ -1,8 +1,8 @@
-import Container from "@/app/components/Container";
+import Container from "@/components/Container";
 import OrdersClient from "./OrderClient";
 import getCurrentUser from "@/actions/getCurrentUser";
 import getOrdersByUserId from "@/actions/getOrdersByUserId";
-import NullData from "../components/NullData";
+import NullData from "@/components/NullData";
 
 const Orders = async () => {
   const user = await getCurrentUser();

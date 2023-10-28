@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 import Link from "next/link";
-import HomeBanner from "../components/HomeBanner";
+import HomeBanner from "@/components/HomeBanner";
 
 export default function DemoPage() {
   return (

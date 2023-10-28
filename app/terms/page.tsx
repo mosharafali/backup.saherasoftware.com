@@ -1,7 +1,6 @@
 export const dynamic = "force-dynamic";
 import Link from "next/link";
-import HomeBanner from "../components/HomeBanner";
-import Script from "next/script";
+import HomeBanner from "@/components/HomeBanner";
 
 export default function ContactPage() {
   return (

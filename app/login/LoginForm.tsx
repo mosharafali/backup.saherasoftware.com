@@ -1,9 +1,9 @@
 "use client";
 
 import { AiOutlineGoogle } from "react-icons/ai";
-import Button from "../components/Button";
-import Heading from "../components/Heading";
-import Input from "../components/inputs/Input";
+import Button from "@/components/Button";
+import Heading from "@/components/Heading";
+import Input from "@/components/inputs/Input";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";

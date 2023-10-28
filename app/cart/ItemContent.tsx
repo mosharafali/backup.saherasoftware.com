@@ -4,7 +4,7 @@ import { truncateText } from "@/utils/truncateText";
 import { CartProduct } from "../product/[productId]/ProductDetails";
 import { useCart } from "@/hooks/useCart";
 import Image from "next/image";
-import SetQuantity from "../components/products/SetQuantity";
+import SetQuantity from "@/components/products/SetQuantity";
 import Link from "next/link";
 
 interface ItemContentProps {

@@ -3,7 +3,7 @@ import { GrAppleAppStore } from "react-icons/gr";
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
-import HomeBanner from "../components/HomeBanner";
+import HomeBanner from "@/components/HomeBanner";
 
 export default function DownloadappPage() {
   return (
